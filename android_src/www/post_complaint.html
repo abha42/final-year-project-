@@ -256,6 +256,25 @@
                     </div>
 				</div>
                <br>
+                                        <p>Lat : {{x.field_15}}</p>					
+					<p>Long: {{x.field_16}}</p>								
+					<p>Complaint Condition: {{x.field_12}}</p>
+					<img width="300" height="300" src="{{x.field_13}}"/><br>		
+			
+					<a ng-click="update_id(x.cus_id)" class="btn" style="border-radius:4px; color:#fff; 
+					text-transform:none; background-color:#F14742; width:auto; height:2em; padding:2px 0 2px 0;" >
+					Update Map
+					</a>					
+					<a ng-click="upload_photo(x.cus_id)" class="btn" style="border-radius:4px; color:#fff; 
+					text-transform:none; background-color:#F14742; width:auto; height:2em; padding:2px 0 2px 0;" >
+					Upload Photo	
+					</a>
+
+
+
+
+
+			
 			   <!-- Button -->
 				<button ng-click="create_complaint()"  type="button"  class="btn btn-primary btn-block">Post Complaint</button>			</div>
 			<br>
